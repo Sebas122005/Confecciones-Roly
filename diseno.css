@@ -4,22 +4,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Playfair Display', 'Lora', serif;;
 }
 
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    width: 100%;
+    max-width: 100%;
 }
 
 .sec_encabezado {
     background-image: url('./imagenes/img1.jpg');
-    text-align: center;
-    font-family: 'Playfair Display', 'Lora', serif;
     background-size: cover;
-    padding: 13em;
     text-align: center;
+    align-items: center;
+    color: #000000; 
+    font-family: 'Playfair Display', 'Lora', serif;
+    background-size: 100%;
+    padding-top: 8em;
+    padding-bottom: 8em;
+    text-align: center;
+    width: 100%;
 }
 
 .h_titulo {
@@ -34,9 +40,6 @@ body {
 .sec_servicios {
     background: #eee;
     font-family: 'Playfair Display', 'Lora', serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
 
 }
@@ -45,13 +48,13 @@ body {
     font-size: 2em;
     font-family: 'Playfair Display', 'Lora', serif;
     text-decoration: underline;
-    margin: 12px 12px 12px 120px;
+    margin: 12px 40%;
 }
 .h_galeria{
     font-size: 2em;
     font-family: 'Playfair Display', 'Lora', serif;
     text-decoration: underline;
-    margin: 12px 12px 0px 120px;
+    margin: 12px 40%;
 }
 
 .container {
