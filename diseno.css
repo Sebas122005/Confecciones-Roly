@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.sec_encabezado {
+    background-image: url('./imagenes/img1.jpg');
+    text-align: center;
+    font-family: 'Playfair Display', 'Lora', serif;
+    background-size: cover;
+    padding: 13em;
+    text-align: center;
+}
+
+.h_titulo {
+    font-size: 6em;
+}
+
+.parraf_1 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.sec_servicios {
+    background: #eee;
+    font-family: 'Playfair Display', 'Lora', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.h_servicios {
+    font-size: 2em;
+    font-family: 'Playfair Display', 'Lora', serif;
+    text-decoration: underline;
+    margin: 12px 12px 12px 120px;
+}
+.h_galeria{
+    font-size: 2em;
+    font-family: 'Playfair Display', 'Lora', serif;
+    text-decoration: underline;
+    margin: 12px 12px 0px 120px;
+}
+
+.container {
+    margin: 5px;
+}
+.sec_contacto{
+    margin: 5px;
+}
+.h_contactos,.h_ubicacion{
+    font-size: 2em;
+    font-family: 'Playfair Display', 'Lora', serif;
+    text-decoration: underline;
+    margin: 12px 12px 12px 120px;
+}
+
+/* Estilos para la sección de contacto */
+.sec_contacto {
+    background-color: #f8f9fa; /* Fondo de la sección */
+    padding: 20px; /* Espaciado interno */
+    align-items: center;
+    text-align: center;
+}
+
+
+.icon_contact {
+    font-size: 18px; /* Tamaño de fuente del texto de contacto */
+    margin-bottom: 10px; /* Espaciado inferior del texto de contacto */
+}
+
+.img-icon-contact {
+    width: 20px; /* Tamaño de la imagen de contacto */
+    margin-left: 5px; /* Espaciado a la izquierda de la imagen de contacto */
+}
+
+
+/* Estilos adicionales para mejorar la legibilidad en dispositivos pequeños */
+@media (max-width: 768px) {
+    .h_contactos,
+    .h_ubicacion {
+        font-size: 20px; /* Ajuste de tamaño de fuente para dispositivos pequeños */
+    }
+
+    .icon_contact {
+        font-size: 16px; /* Ajuste de tamaño de fuente para dispositivos pequeños */
+    }
+}
+a{
+    text-decoration: none;
+    color: black;
+}
