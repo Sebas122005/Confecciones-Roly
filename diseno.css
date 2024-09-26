@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playfair Display', 'Lora', serif;;
+    font-family: 'Playfair Display', 'Lora', serif;
+    overflow:hidden;
 }
 
 body {
@@ -15,25 +16,27 @@ body {
 }
 
 .sec_encabezado {
-    background-image: url('./imagenes/img1.jpg');
-    background-size: cover;
+    background-image: url(./imagenes/img1.jpg);
+    background-attachment: fixed;
+    opacity: 0.93;
     text-align: center;
+    background-repeat: no-repeat;
     align-items: center;
-    color: #000000; 
+    color: #000000;
     font-family: 'Playfair Display', 'Lora', serif;
     background-size: 100%;
-    padding-top: 8em;
-    padding-bottom: 8em;
-    text-align: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    margin: 0;
     width: 100%;
 }
 
 .h_titulo {
-    font-size: 6em;
+    /*font-size: 6em;*/
 }
 
 .parraf_1 {
-    font-size: 2.5em;
+    /*font-size: 2.5em;*/
     font-weight: 600;
 }
 
