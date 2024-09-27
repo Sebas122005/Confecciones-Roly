@@ -1,99 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 * {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playfair Display', 'Lora', serif;;
 }
 
+a{
+    color: #ff0000 !important;
+}
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     max-width: 100%;
 }
-
-.sec_encabezado {
-    background-image: url('./imagenes/img1.jpg');
-    background-size: cover;
-    text-align: center;
+.d_services .row{
     align-items: center;
-    color: #000000; 
-    font-family: 'Playfair Display', 'Lora', serif;
-    background-size: 100%;
-    padding-top: 8em;
-    padding-bottom: 8em;
-    text-align: center;
+}
+.sec_encabezado {
+    background-image: url(./imagenes/img1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:5%;
+    padding-bottom: 5%;
+    margin: 0px;
     width: 100%;
+}
+.info-encabezado{
+    margin: 0px 8%;
 }
 
 .h_titulo {
-    font-size: 6em;
+    color: #ff0000;
+    text-shadow: -1px 2px 6px #fafafa;
+    font-weight: 700;
+    font-family: cursive,"Lato", sans-serif;
+    text-decoration: underline;
 }
 
 .parraf_1 {
-    font-size: 2.5em;
-    font-weight: 600;
+    font-weight: 400;
+    text-align: center;
+    font-family: cursive,"Lato", sans-serif;
+    color: #000000;
+    text-shadow: -1px 2px 6px #fafafa;
+    margin: 2% 5%;
 }
 
 .sec_servicios {
-    background: #eee;
-    font-family: 'Playfair Display', 'Lora', serif;
+    background: #fff;
     min-height: 100vh;
-
+    margin: 3% auto;
 }
 
 .h_servicios {
     font-size: 2em;
-    font-family: 'Playfair Display', 'Lora', serif;
+    font-family: cursive,"Lato", sans-serif;
     text-decoration: underline;
-    margin: 12px 40%;
+    text-align: center;
 }
 .h_galeria{
     font-size: 2em;
     font-family: 'Playfair Display', 'Lora', serif;
     text-decoration: underline;
-    margin: 12px 40%;
+    text-align: center;
 }
 
 .container {
     margin: 5px;
 }
 .sec_contacto{
-    margin: 5px;
+    margin: auto;
 }
-.h_contactos,.h_ubicacion{
+.h_contactos,.h_ubicacion,.h_socios{
     font-size: 2em;
-    font-family: 'Playfair Display', 'Lora', serif;
+    color: #fff;
+    font-family: cursive,"Lato", sans-serif;
     text-decoration: underline;
-    margin: 12px 12px 12px 120px;
 }
 
 /* Estilos para la sección de contacto */
 .sec_contacto {
-    background-color: #f8f9fa; /* Fondo de la sección */
-    padding: 20px; /* Espaciado interno */
-    align-items: center;
+    background-color: #000;
+    padding: 20px;
     text-align: center;
+    margin: 0px;
 }
 
 
 .icon_contact {
     font-size: 18px; /* Tamaño de fuente del texto de contacto */
-    margin-bottom: 10px; /* Espaciado inferior del texto de contacto */
+    margin: 20px; /* Espaciado inferior del texto de contacto */
+    text-align: center;
+    color: #fff;
 }
 
 .img-icon-contact {
     width: 20px; /* Tamaño de la imagen de contacto */
-    margin-left: 5px; /* Espaciado a la izquierda de la imagen de contacto */
+    margin-left:10px; /* Espaciado a la izquierda de la imagen de contacto */
 }
 
 
 /* Estilos adicionales para mejorar la legibilidad en dispositivos pequeños */
 @media (max-width: 768px) {
     .h_contactos,
-    .h_ubicacion {
+    .h_ubicacion,.h_socios {
         font-size: 20px; /* Ajuste de tamaño de fuente para dispositivos pequeños */
     }
 
@@ -101,7 +116,53 @@ body {
         font-size: 16px; /* Ajuste de tamaño de fuente para dispositivos pequeños */
     }
 }
-a{
-    text-decoration: none;
-    color: black;
+
+.card-title{
+    font-family: cursive;
 }
+
+.card-text{
+    font-family: system-ui;
+    text-align: justify;
+    margin: 15px auto !important;
+}
+
+.content {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.9s ease;
+  }
+
+  /* Ocultar el botón cuando no se necesite */
+  .read-more-btn {
+    display: none;
+    cursor: pointer;
+    color: #ff0000;
+    text-decoration: underline;
+  }
+
+  /* Mostrar botón en pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .content {
+      -webkit-line-clamp: 10; /* Número de líneas mostradas */
+      max-height: 4.5em; /* Ajustar el alto según el número de líneas */
+    }
+
+    .read-more-btn {
+      display: inline;
+    }
+  }
+
+  /* Expansión completa */
+  .content.expanded {
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    max-height: none;
+  }
+
+  .img-web{
+    position: relative;
+    width: 40%; 
+  }
